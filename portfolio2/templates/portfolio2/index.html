@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio2/index.css' %}">
+
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home ^-^</title>
+    </head>
+    <body>
+        <section class="header" id="head">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">📍 Tautavel 🗺️</div>
+                    <img class="sliderz" src="{% static 'portfolio2/assets/homeSlider/20210523_150524.jpg' %}">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">📍 Marignane 🛴</div>
+                    <img class="sliderz" src="{% static 'portfolio2/assets/homeSlider/20210819_200705.jpg' %}">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">📍 Villefontaine 🛴🛴</div>
+                    <img class="sliderz" src="{% static 'portfolio2/assets/homeSlider/DSC02845.JPG' %}">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">📍 Las Vegas 🪅</div>
+                    <img class="sliderz" src="{% static 'portfolio2/assets/homeSlider/20200126_134831.jpg' %}">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">📍 Roanne 🪂</div>
+                    <img class="sliderz" src="{% static 'portfolio2/assets/homeSlider/IMG_20200823_131523.jpg' %}">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">📍 At Home 💻</div>
+                    <img class="sliderz" src="{% static 'portfolio2/assets/homeSlider/python-langage-code.jpg' %}">
+                </div>
+            </div>
+            <div id="pp">
+                <img class="ppp" src="{% static 'portfolio2/assets/20200918_102330.jpg' %}" alt="Photo-profile">
+            </div>
+            <div id="desc">
+                <p id="description">Hello !<br> I'm Cyril, nice to meet you :)<br>I'm a web and data enthusiast !<br>Also a scooter rider, a big traveling fan, and so on...</p>
+                <div id="socials">
+                    <ul id="socials-list">
+                        <li>
+                            <a href="https://www.instagram.com/cyrheel_/" title="Go to ..." rel="noopener" target="_blank">
+                                <img class="logo" src="{% static 'portfolio2/assets/icons/instagram.svg' %}" alt="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/cyrheel" title="Go to ..." rel="noopener" target="_blank">
+                                <img class="logo" src="{% static 'portfolio2/assets/icons/github.svg' %}" alt="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:cyrilb38@hotmail.com" title="Send me a mail">
+                                <img class="logo" src="{% static 'portfolio2/assets/icons/envelope-fill.svg' %}" alt="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+33781914408" title="Call me">
+                                <img class="logo" src="{% static 'portfolio2/assets/icons/phone.svg' %}" alt="logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="content">
+            <div id="main-content">
+                <div id="left">
+                    <span id="domain">WEB</span>
+                    <div class="projects">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><button class="content-btn" id="btnWp1">This portfolio</button></li>
+                            <li><button class="content-btn" id="btnWp2">Case Converter</button></li>
+                            <li><button class="content-btn" id="btnWp3">WCS tech entrance test</button></li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li><button class="content-btn" id="btnWs1">Front-end</button></li>
+                            <li><button class="content-btn" id="btnWs2">Back-end</button></li>
+                            <li><button class="content-btn" id="btnWs3">Devops</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right">
+                    <span id="domain2">DATA</span>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li><button class="content-btn" id="btnDs1">Algo & Others</button></li>
+                            <li><button class="content-btn" id="btnDs2">Analysis</button></li>
+                            <li><button class="content-btn" id="btnDs3">Visualization</button></li>
+                            <li><button class="content-btn" id="btnDs4">Machine learning</button></li>
+                        </ul>
+                    </div>
+                    <div class="projects">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><button class="content-btn" id="btnDp1">Business Case 1</button></li>
+                            <li><button class="content-btn" id="btnDp2">Business Case 2 (ML)</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="modals">
+                <div id="web-project-1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>This Portfolio</h4>
+                            <span class="close" id="close-wp1">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="indic">
+                                <div class="indic-item person">
+                                    <img class="miniature" id="pup" src="{% static 'portfolio2/assets/indics/person-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupPerson">1 person was involved</span>
+                                </div>
+                                <div class="indic-item date">
+                                    <img class="miniature" id="pud" src="{% static 'portfolio2/assets/indics/stopwatch-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupDate">2 months of work</span>
+                                </div>
+                                <div class="indic-item code-lines">
+                                    <img class="miniature" id="pul" src="{% static 'portfolio2/assets/indics/file-text-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupLines">+3000 lines of code</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="btn-tabs-container">
+                                    <button class="btn-tabs btA" onclick="openTabs('tA', 'Techno', 'btA', event)" style="background: rgb(58, 12, 163); color: rgb(222, 226, 230);">Tech</button>
+                                    <button class="btn-tabs btA" onclick="openTabs('tA', 'Photo', 'btA', event)">ScreenShot</button>
+                                    <button class="btn-tabs btA" onclick="openTabs('tA', 'Links', 'btA', event)">Links</button>
+                                </div>
+                                <div class="tabs-container">
+                                    <div id="Techno" class="Tabs tA" style="display:flex;">
+                                        <div class="tech-logo-container">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/django.svg' %}" alt="techno_logo" title="Django (Python)">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/html-1.svg' %}" alt="techno_logo" title="HTML 5">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/css-3.svg' %}" alt="techno_logo" title="CSS 3">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/javascript-1.svg' %}" alt="techno_logo" title="JavaScript">
+                                        </div>
+                                    </div>
+                                    <div id="Photo" class="Tabs tA">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture35.png' %}" alt="ScreenShot">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture36.png' %}" alt="ScreenShot">
+                                    </div>
+                                    <div id="Links" class="Tabs tA">
+                                        <a class="a" href="/">Final version available here</a>
+                                        <p>to the github soon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="web-project-2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Case Converter</h4>
+                            <span class="close" id="close-wp2">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="indic">
+                                <div class="indic-item person">
+                                    <img class="miniature" id="pup2" src="{% static 'portfolio2/assets/indics/person-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupPerson2">1 person was involved</span>
+                                </div>
+                                <div class="indic-item date">
+                                    <img class="miniature" id="pud2" src="{% static 'portfolio2/assets/indics/stopwatch-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupDate2">1.5 week of work</span>
+                                </div>
+                                <div class="indic-item code-lines">
+                                    <img class="miniature" id="pul2" src="{% static 'portfolio2/assets/indics/file-text-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupLines2">~ 200 lines of code</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="btn-tabs-container">
+                                    <button class="btn-tabs btB" onclick="openTabs('tB', 'Techno2', 'btB', event)" style="background: rgb(58, 12, 163); color: rgb(222, 226, 230);">Tech</button>
+                                    <button class="btn-tabs btB" onclick="openTabs('tB', 'Photo2', 'btB',  event)">ScreenShot</button>
+                                    <button class="btn-tabs btB" onclick="openTabs('tB', 'Links2', 'btB',  event)">Links</button>
+                                </div>
+                                <div class="tabs-container">
+                                    <div id="Techno2" class="Tabs tB" style="display:flex;">
+                                        <div class="tech-logo-container">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/html-1.svg' %}" alt="techno_logo" title="HTML 5">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/css-3.svg' %}" alt="techno_logo" title="CSS 3">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/javascript-1.svg' %}" alt="techno_logo" title="JavaScript">
+                                        </div>
+                                    </div>
+                                    <div id="Photo2" class="Tabs tB">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture29.png' %}" alt="ScreenShot">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture33.png' %}" alt="ScreenShot">
+                                    </div>
+                                    <div id="Links2" class="Tabs tB">
+                                        <a class="a" rel="noopener" target="_blank" href="https://github.com/cyrheel/Case-Converter">Full code available on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="web-project-3" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>WCS tech entrance test</h4>
+                            <span class="close" id="close-wp3">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="indic">
+                                <div class="indic-item person">
+                                    <img class="miniature" id="pup3" src="{% static 'portfolio2/assets/indics/person-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupPerson3">1 person was involved</span>
+                                </div>
+                                <div class="indic-item date">
+                                    <img class="miniature" id="pud3" src="{% static 'portfolio2/assets/indics/stopwatch-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupDate3">1.5 week of work</span>
+                                </div>
+                                <div class="indic-item code-lines">
+                                    <img class="miniature" id="pul3" src="{% static 'portfolio2/assets/indics/file-text-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupLines3">~ 200 lines of code</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="btn-tabs-container">
+                                    <button class="btn-tabs btC" onclick="openTabs('tC', 'Techno3', 'btC', event)" style="background: rgb(58, 12, 163); color: rgb(222, 226, 230);">Tech</button>
+                                    <button class="btn-tabs btC" onclick="openTabs('tC', 'Photo3', 'btC', event)">ScreenShot</button>
+                                    <button class="btn-tabs btC" onclick="openTabs('tC', 'Links3', 'btC', event)">Links</button>
+                                </div>
+                                <div class="tabs-container">
+                                    <div id="Techno3" class="Tabs tC" style="display:flex;">
+                                        <div class="tech-logo-container">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/django.svg' %}" alt="techno_logo" title="Django (Python)">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/html-1.svg' %}" alt="techno_logo" title="HTML 5">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/css-3.svg' %}" alt="techno_logo" title="CSS 3">
+                                        </div>
+                                    </div>
+                                    <div id="Photo3" class="Tabs tC">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture30.png' %}" alt="ScreenShot">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture34.png' %}" alt="ScreenShot">
+                                    </div>
+                                    <div id="Links3" class="Tabs tC">
+                                        <a class="a" rel="noopener" target="_blank" href="https://wcs-techtest.herokuapp.com/index/">Final version available here</a>
+                                        <a class="a" rel="noopener" target="_blank" href="https://github.com/cyrheel/wcs-techtest">Full code available on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="web-skill-1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Front-end</h4>
+                            <span class="close" id="close-ws1">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-HTML">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/html-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">HTML 5</span>
+                                        <span class="PercentText ">95%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-CSS">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/css-3.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">CSS 3</span>
+                                        <span class="PercentText ">70%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-JS">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/javascript-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Javascript</span>
+                                        <span class="PercentText ">40%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-React">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/react-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">React</span>
+                                        <span class="PercentText ">30%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-React-Native">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/react-native-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">React Nativ</span>
+                                        <span class="PercentText ">25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="web-skill-2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Back-end</h4>
+                            <span class="close" id="close-ws2">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Django">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/django.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Django</span>
+                                        <span class="PercentText ">55%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Node">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/nodejs-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Node.Js</span>
+                                        <span class="PercentText ">25%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Mysql">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/mysql-6.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">My SQL</span>
+                                        <span class="PercentText ">65%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Mongo">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/mongodb-icon-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Mongo Db</span>
+                                        <span class="PercentText ">45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="web-skill-3" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Devops</h4>
+                            <span class="close" id="close-ws3">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Docker">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/docker.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Docker</span>
+                                        <span class="PercentText ">25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="data-skill-1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Algorithmic & Others</h4>
+                            <span class="close" id="close-ds1">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-PythonN">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/python-5.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Native Python</span>
+                                        <span class="PercentText ">95%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-JsN">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/javascript-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Native JavaScript</span>
+                                        <span class="PercentText ">50%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-TypeScript">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/typescript-2.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">TypeScript</span>
+                                        <span class="PercentText ">25%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Selenium">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/book.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Selenium</span>
+                                        <span class="PercentText ">55%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-API">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/openapi-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">API REST</span>
+                                        <span class="PercentText ">45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="data-skill-2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Analysis</h4>
+                            <span class="close" id="close-ds2">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-NLTK">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/book.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">NLTK</span>
+                                        <span class="PercentText ">70%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Numpy">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/numpy-1.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Numpy</span>
+                                        <span class="PercentText ">55%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Pandas">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/Pandas_mark.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Pandas</span>
+                                        <span class="PercentText ">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="data-skill-3" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Visualization</h4>
+                            <span class="close" id="close-ds3">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Seaborn">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/logo-mark-lightbg.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Seaborn</span>
+                                        <span class="PercentText ">75%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Dash">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/plot_ly-icon.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Dash</span>
+                                        <span class="PercentText ">90%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Power">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/power-bi.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Power BI</span>
+                                        <span class="PercentText ">35%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="data-skill-4" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Machine Learning (AI)</h4>
+                            <span class="close" id="close-ds4">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="skill-box">
+                                <div class="skill_title">
+                                    <h5>Mastery level</h5>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Scikit">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/Scikit_learn_logo_small.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Scikit-Learn</span>
+                                        <span class="PercentText ">75%</span>
+                                    </div>
+                                </div>
+                                <div class="SkillBar">
+                                    <div class="skill-items" id="Skill-Tensor">
+                                        <img class="skill-logo" src="{% static 'portfolio2/assets/skill_logo/tensorflow-2.svg' %}" alt="Mini Logo">
+                                        <span class="PercentText ">Tensor Flow</span>
+                                        <span class="PercentText ">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="data-project-1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Business Case</h4>
+                            <span class="close" id="close-dp1">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="indic">
+                                <div class="indic-item person">
+                                    <img class="miniature" id="pup4" src="{% static 'portfolio2/assets/indics/person-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupPerson4">1 person was involved...</span>
+                                </div>
+                                <div class="indic-item date">
+                                    <img class="miniature" id="pud4" src="{% static 'portfolio2/assets/indics/stopwatch-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupDate4">4 hours of work</span>
+                                </div>
+                                <div class="indic-item code-lines">
+                                    <img class="miniature" id="pul4" src="{% static 'portfolio2/assets/indics/file-text-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupLines4">less than 150 lines of code</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="btn-tabs-container">
+                                    <button class="btn-tabs btD" onclick="openTabs('tD', 'Techno4', 'btD', event)" style="background: rgb(58, 12, 163); color: rgb(222, 226, 230);">Tech</button>
+                                    <button class="btn-tabs btD" onclick="openTabs('tD', 'Photo4', 'btD', event)">ScreenShot</button>
+                                    <button class="btn-tabs btD" onclick="openTabs('tD', 'Links4', 'btD', event)">Links</button>
+                                </div>
+                                <div class="tabs-container">
+                                    <div id="Techno4" class="Tabs tD" style="display:flex;">
+                                        <div class="tech-logo-container">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/python-5.svg' %}" alt="techno_logo" title="Native Python">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/json-5.svg' %}" alt="techno_logo" title="Json">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/Pandas_mark.svg' %}" alt="techno_logo" title="Pandas (Python)">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/logo-mark-lightbg.svg' %}" alt="techno_logo" title="Seaborn (Python)">
+                                        </div>
+                                    </div>
+                                    <div id="Photo4" class="Tabs tD">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture31.png' %}" alt="ScreenShot">
+                                    </div>
+                                    <div id="Links4" class="Tabs tD">
+                                        <a class="a" href="https://github.com/cyrheel/BusinessCase">Full code available here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="data-project-2" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Business Case 2</h4>
+                            <span class="close" id="close-dp2">X</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="indic">
+                                <div class="indic-item person">
+                                    <img class="miniature" id="pup5" src="{% static 'portfolio2/assets/indics/person-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupPerson5">1 person was involved</span>
+                                </div>
+                                <div class="indic-item date">
+                                    <img class="miniature" id="pud5" src="{% static 'portfolio2/assets/indics/stopwatch-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupDate5">6 hours of work</span>
+                                </div>
+                                <div class="indic-item code-lines">
+                                    <img class="miniature" id="pul5" src="{% static 'portfolio2/assets/indics/file-text-fill.svg' %}" alt="Mini SVG Logo">
+                                    <span class="popuptext" id="popupLines5">less than 100 lines of code</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="btn-tabs-container">
+                                    <button class="btn-tabs btE" onclick="openTabs('tE', 'Techno5', 'btE', event)" style="background: rgb(58, 12, 163); color: rgb(222, 226, 230);">Tech</button>
+                                    <button class="btn-tabs btE" onclick="openTabs('tE', 'Photo5', 'btE', event)">ScreenShot</button>
+                                    <button class="btn-tabs btE" onclick="openTabs('tE', 'Links5', 'btE', event)">Links</button>
+                                </div>
+                                <div class="tabs-container">
+                                    <div id="Techno5" class="Tabs tE" style="display:flex;">
+                                        <div class="tech-logo-container">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/python-5.svg' %}" alt="techno_logo" title="Native Python">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/Pandas_mark.svg' %}" alt="techno_logo" title="Pandas (Python)">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/logo-mark-lightbg.svg' %}" alt="techno_logo" title="Seaborn (Python)">
+                                            <img class="techno-logo" src="{% static 'portfolio2/assets/skill_logo/Scikit_learn_logo_small.svg' %}" alt="techno_logo" title="Scikit-Learn (Python)">
+                                        </div>
+                                    </div>
+                                    <div id="Photo5" class="Tabs tE">
+                                        <img class="screenShot" src="{% static 'portfolio2/assets/screenshot/Capture32.png' %}" alt="ScreenShot">
+                                    </div>
+                                    <div id="Links5" class="Tabs tE">
+                                        <a class="a" href="https://github.com/cyrheel/BusinessCase_2">Full code available here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>~~~</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form method="post">
+              {% csrf_token %}
+              {{ form }}
+              <input type="submit" value="Send !" id="submit">
+            </form>
+            <div class="footer"></div>
+        </section>
+        <script src="{% static 'portfolio2/Js/index.js' %}"></script>
+    </body>
+</html>
